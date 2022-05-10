@@ -1,0 +1,405 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+/* formatos de la pagina */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#check {
+    display: none;
+}
+
+.bar-btn {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+.container {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* quines somos de la pagina */
+
+#qsomos .container {
+    padding: 80px 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#qsomos .txt-qsomos {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#qsomos .txt-qsomos h2 {
+    margin: 0;
+}
+
+#qsomos .img-container {
+    background-image: url("imagenes/DYC\ Quienes\ Somos.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+
+/* header y enlaces de la parate superior de la pagina */
+
+.header {
+    background-color: #333;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2rem 0;
+
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 4rem;
+    max-height: 125px;
+    padding: 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+        .navigation ul li {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s linear;
+            border-radius: 5px;
+        }
+
+        .navigation ul li a:hover {
+            background: gray;
+        }
+
+
+
+/* banner de la pgina  */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes banner{
+    0%, 20%{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/banner1.jpg");
+    }
+    25%, 45%{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/banner2.jpg");
+    }
+    50%, 70%{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/banner3.jpg");
+    }
+    75%, 100%{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/banner4.jpg");
+    }
+}
+
+.banner .info{
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+.banner .info h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.banner .info p{
+    color: rgb(202, 202, 202);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* pie de pagina  */
+
+.footer {
+    background-color: gray;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/* contenido de la pagina */
+
+.main {
+    padding-top: 12rem;
+}
+
+/* botones */
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(23, 117, 146);
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background-color: rgb(94, 244, 255);
+}
+
+
+/* cartas y seccion de informacion */
+
+#nuestro-programas {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#nuestro-programas .container {
+    padding: 80px 12px;
+}
+
+#nuestro-programas h2 {
+    margin-top: 0;
+}
+
+#nuestro-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#nuestro-programas .info-ventanas {
+    display: flex;
+    justify-content: center;
+}
+
+#nuestro-programas h3{
+    margin-top: 0;
+}
+
+#nuestro-programas p{
+    display: block;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/acerca-img.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/services-img.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/contacto-img.jpg");
+}
+
+/* hero de la pagina */
+
+#hero {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:  90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0,0,0,0.2)
+    ),url("imagenes/imagen-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 890px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: 0.3s linear;
+    }
+
+    .menu-icon:hover {
+        background: gray;
+    }
+
+    .navigation{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bar-btn {
+        display: block;
+        border: 2px solid white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 10px;
+        font-size: 35px;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .bar-btn:hover {
+        background: gray;
+    }
+
+    #check:checked ~ .navigation ul{
+        height: 12em;
+    }
+
+    #check:checked ~ .navigation ul li {
+        transition: 0.3s;
+        display:block;
+    }
+
+    .navigation ul {
+        height: 0;
+        transition: all 0.3s;
+    }
+
+            .navigation ul li {
+                display: none;
+                transition: all 0.3s;
+            }
+    
+            .navigation ul li a {
+                display: block;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+            }
+    
+            .navigation ul li a:hover {
+                background: gray;
+            }
+
+    #qsomos .img-container {
+        display: none;
+    }
+
+    #qsomos .txt-qsomos {
+        width: 100%;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nuestro-programas .info-ventanas{
+        display: block;
+    }
+
+    #nuestro-programas p {
+        display: none;
+    }
+    
+}
